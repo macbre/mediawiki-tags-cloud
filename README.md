@@ -1,5 +1,5 @@
 # mediawiki-tags-cloud
-Generates tags cloud using MediaWiki XML content dump and [wordcloud module](https://github.com/amueller/word_cloud).
+Generates tags cloud using [MediaWiki XML content dump](https://github.com/macbre/mediawiki-dump) and [wordcloud module](https://github.com/amueller/word_cloud).
 
 ### Gallery
 
@@ -27,3 +27,7 @@ Generate tags cloud for [The Muppet Wiki](http://muppet.wikia.com):
 python frequencies_from_dump.py  | tee muppet.json
 python cloud_from_frequencies.py muppet.json
 ```
+
+## Troubelshooting
+
+If you get `AttributeError: python: undefined symbol: archive_errno` please refer to [`mediawiki-dump` package README](https://github.com/macbre/mediawiki-dump#dependencies).
