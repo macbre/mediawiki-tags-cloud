@@ -15,7 +15,7 @@ from stop_words import get_stop_words
 logging.basicConfig(level=logging.INFO)
 
 
-def get_frequencies(wikia_name, limit=100, min_length=3):
+def get_frequencies(wikia_name, limit=500, min_length=3):
     """
     :type wikia_name str|None
     :type limit int
@@ -37,7 +37,7 @@ def get_frequencies(wikia_name, limit=100, min_length=3):
         tokens = tokenize(clean(page.content.lower()))
         tokens = [
             token for token in tokens
-            if len(token) >= min_length and token not in stop_words
+            if len(token) >= min_length and token not in stop_words and not token.startswith('#')
         ]
 
         stats.update(tokens)
