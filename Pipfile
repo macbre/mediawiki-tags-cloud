@@ -9,6 +9,7 @@ name = "pypi"
 mediawiki-dump = "*"
 wordcloud = "*"
 Pillow = "*"
+stop-words = "*"
 
 [requires]
 python_version = "3.6"
