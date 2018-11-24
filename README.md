@@ -20,3 +20,4 @@ python cloud_from_frequencies.py muppet.json
 
 #### Result
 
+See cloud.png file.
