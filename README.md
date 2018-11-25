@@ -12,6 +12,10 @@ Generates tags cloud using [MediaWiki XML content dump](https://github.com/macbr
 #### [GTA Wiki](http://gta.wikia.com)
 ![](https://github.com/macbre/mediawiki-tags-cloud/raw/master/cloud-gta.png)
 
+### [Polish Wikipedia](https://pl.wikipedia.org)
+
+![](https://github.com/macbre/mediawiki-tags-cloud/raw/master/cloud-wikipedia-pl.png)
+
 ### Install
 
 ```
